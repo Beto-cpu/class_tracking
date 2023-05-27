@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`min-h-screen w-screen overflow-x-hidden flex flex-col justify-between ${inter.className}`}>
         <Header />
-          {children}
+          <section className='pt-8 md:pt-20'>
+            {children}
+          </section>
         <Footer />
       </body>
     </html>
